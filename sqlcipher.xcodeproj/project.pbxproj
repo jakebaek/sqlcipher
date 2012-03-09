@@ -190,7 +190,7 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				HEADER_SEARCH_PATHS = (
 					"$(PROJECT_DIR)",
-					"../openssl/include",
+					../openssl/include,
 				);
 				INSTALL_PATH = /usr/local/lib;
 				OTHER_CFLAGS = (
@@ -198,6 +198,7 @@
 					"-DNDEBUG",
 					"-DSQLITE_TEMP_STORE=2",
 					"-DSQLITE_THREADSAFE",
+					"-DSQLITE_ENABLE_FTS4",
 				);
 				"OTHER_CFLAGS[arch=armv6]" = (
 					"-mno-thumb",
@@ -220,7 +221,7 @@
 				GCC_MODEL_TUNING = G5;
 				HEADER_SEARCH_PATHS = (
 					"$(PROJECT_DIR)",
-					"../openssl/include",
+					../openssl/include,
 				);
 				INSTALL_PATH = /usr/local/lib;
 				OTHER_CFLAGS = (
@@ -229,6 +230,7 @@
 					"-DSQLITE_OS_UNIX=1",
 					"-DSQLITE_TEMP_STORE=2",
 					"-DSQLITE_THREADSAFE",
+					"-DSQLITE_ENABLE_FTS4",
 				);
 				"OTHER_CFLAGS[arch=armv6]" = (
 					"-mno-thumb",
